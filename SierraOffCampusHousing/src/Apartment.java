@@ -6,16 +6,11 @@
 public class Apartment extends Property {
 	private boolean hasGating, hasParking, allowsPets, hasShuttle, utilitiesIncluded, hasPropertySecurity;
 	
-	public Apartment(String name, double price, int size, int numOfRooms, String lease) {
+	public Apartment() {
 		super();
-		this.name = name;
-		this.price = price;
-		this.size = size;
-		this.numOfRooms = numOfRooms;
-		this.lease = lease;
 	}
 	
-	protected boolean hasGating() {
+	protected void hasGating() {
 		boolean Apartment = true;
 		if(Apartment == true) {
 			System.out.println("This apartment has gating");
@@ -25,7 +20,7 @@ public class Apartment extends Property {
 		}
 	}
 	
-	protected boolean hasParking() {
+	protected void hasParking() {
 		boolean Apartment = true;
 		if(Apartment == true) {
 			System.out.println("This apartment has parking");
@@ -35,7 +30,7 @@ public class Apartment extends Property {
 		}
 	}
 	
-	protected boolean hasShuttle() {
+	protected void hasShuttle() {
 		boolean Apartment = true;
 		if(Apartment == true) {
 			System.out.println("This apartment has a shuttle");
@@ -45,7 +40,7 @@ public class Apartment extends Property {
 		}
 	}
 	
-	protected boolean hasPropertySecurity() {
+	protected void hasPropertySecurity() {
 		boolean Apartment = true;
 		if(Apartment == true) {
 			System.out.println("This apartment has security");
@@ -55,7 +50,7 @@ public class Apartment extends Property {
 		}
 	}
 	
-	protected boolean utilitiesIncluded() {
+	protected void utilitiesIncluded() {
 		boolean Apartment = true;
 		if(Apartment == true) {
 			System.out.println("Utilities are included with this apartment");
@@ -64,6 +59,4 @@ public class Apartment extends Property {
 			System.out.println("Utilities are not included with this apartment");
 		}
 	}
-	
-	
 }
