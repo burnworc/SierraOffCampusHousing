@@ -34,7 +34,7 @@
     "first name": "Dawson",
     "last name":"Smith",
     "DOB:"05/19/1999",
-    "aemail":"dsmith@gmail.com",
+    "email":"dsmith@gmail.com",
     "phone":"random number"
   }
 ]}
