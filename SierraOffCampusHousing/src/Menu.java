@@ -1,25 +1,11 @@
-import java.awt.EventQueue;
-import javax.swing.JOptionPane;
-import javax.swing.JFrame;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import javax.swing.JLabel;
-import java.awt.Font;
-import java.awt.TextField;
-import javax.swing.JButton;
-import java.awt.Color;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.Choice;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
 public class Menu {
 
 	private JFrame frame;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -33,16 +19,10 @@ public class Menu {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public Menu() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(new Color(135, 206, 250));
@@ -129,13 +109,36 @@ public class Menu {
 		});
 		mnFile.add(mntmSavedHomes);
 		
-		JMenuItem mntmLogin = new JMenuItem("Login");
+		String logout = "Logout";
+		String login = "Login";
+		JMenuItem mntmLogin = new JMenuItem(login);
 		mntmLogin.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent arg0) {
-				
+			public void mousePressed(MouseEvent e) {
+				if(mntmLogin.getText().equalsIgnoreCase(logout)) {
+					mntmLogin.setText(login);
+				}
+				else if(mntmLogin.getText().equalsIgnoreCase(login)) {
+					Login yes = new Login();
+					frame.setVisible(false);
+					mntmLogin.setText(logout);
+					while(yes.isShowing()) {
+					}
+					frame.setVisible(true);
+				}
 			}
 		});
 		mnFile.add(mntmLogin);
 	}
+	
+	public static boolean authenticate(String username, String password) {
+		if(username.equals("Yes") && password.equals("Yes")) {
+			return true;
+		}
+		return false;
+		}
 }
+
+
+
+
