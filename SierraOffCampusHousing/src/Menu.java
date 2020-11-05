@@ -122,9 +122,7 @@ public class Menu {
 					Login yes = new Login();
 					frame.setVisible(false);
 					mntmLogin.setText(logout);
-					while(yes.isShowing()) {
-					}
-					frame.setVisible(true);
+					
 				}
 			}
 		});
