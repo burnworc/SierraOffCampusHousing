@@ -1,6 +1,6 @@
 /**
  * 
- * @author Cole
+ * @author Cole B
  *
  */
 import java.util.*;

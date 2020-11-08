@@ -4,8 +4,7 @@ public class Properties {
 	private ArrayList<Property> propertiesList = new ArrayList<Property>();
 	
 	private Properties() {
-		//propertiesList = DataLoader.getProperties();
-		//property.add()
+		propertiesList = DataLoader.getProperties();
 	}
 	
 	public static Properties getInstance() {
