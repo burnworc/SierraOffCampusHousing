@@ -1,5 +1,5 @@
 /**
- * Cole
+ * Cole B
  */
 import java.io.FileWriter;
 import org.json.simple.JSONArray;

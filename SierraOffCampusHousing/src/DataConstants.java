@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Cole
+ *
+ */
 public abstract class DataConstants {
 	protected static final String PROPERTY_FILE_NAME = "src/property.json";
 	protected static final String PROPERTY_ID = "id";
