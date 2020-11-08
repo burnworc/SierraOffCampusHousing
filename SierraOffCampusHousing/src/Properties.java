@@ -4,7 +4,8 @@ public class Properties {
 	private ArrayList<Property> propertiesList = new ArrayList<Property>();
 	
 	private Properties() {
-		propertiesList = DataLoader.getProperties();
+		//propertiesList = DataLoader.getProperties();
+		//property.add()
 	}
 	
 	public static Properties getInstance() {
@@ -20,6 +21,6 @@ public class Properties {
 	
 	public void addProperty(String id, String name, String price, String location, String size, String numOfRooms, String rating ) {
 		propertiesList.add(new Property(id, name, price, location, size, numOfRooms, rating));
-		DataWriter.savePeople();
+		DataWriter.saveProperties();
 	}
 }

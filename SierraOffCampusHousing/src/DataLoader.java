@@ -1,5 +1,8 @@
 import java.util.*;
 import java.io.FileReader;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 public class DataLoader extends DataConstants {
 	public static ArrayList<Property> getProperties() {
 		ArrayList<Property> properties = new ArrayList<Property>();
