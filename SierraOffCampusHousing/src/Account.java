@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 public class Account {
-
+	
+	private static Account account = null;
 	private String username;
 	private String password;
 	private String firstName;
@@ -9,6 +10,10 @@ public class Account {
 	private String email;
 	private int phone;
 	private ArrayList<Property> favorites = new ArrayList<Property>();
+	
+	private Account() {
+		favorites = DataLoader.loadAccount():
+	}
 
 	public Account( ) {
 	
