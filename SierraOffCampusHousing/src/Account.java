@@ -9,7 +9,7 @@ public class Account {
 	private int DOB;
 	private String email;
 	private int phone;
-	private ArrayList<Property> favorites = new ArrayList<Property>();
+	private static ArrayList<Property> favorites = new ArrayList<Property>();
 	
 	private Account() {
 		favorites = DataLoader.loadAccount():
